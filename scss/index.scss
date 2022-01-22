@@ -755,3 +755,84 @@ img {
     }
   }
 }
+
+// ===== TESTIMONIAL SECTION =====
+.testimonial {
+  &__data {
+    margin-bottom: 3rem;
+  }
+
+  &__container {
+    overflow: hidden;
+  }
+
+  &__content {
+    display: grid;
+    gap: 2rem;
+    width: 340px;
+    padding: 2rem;
+    border: 1.5px solid rgba($color: #343d48, $alpha: 0.1);
+    border-radius: 1rem;
+
+    &-icon {
+      display: inline-flex;
+      gap: 0.3rem;
+      font-size: 1.2rem;
+      color: var(--red-color);
+      margin-bottom: 15px;
+    }
+
+    &-title,
+    &-name,
+    &-sosmed {
+      font-size: 15px;
+      font-weight: var(--font-bold);
+    }
+
+    &-title,
+    &-name {
+      color: var(--black-color);
+    }
+
+    &-comment {
+      font-size: 15px;
+      color: var(--dark-grey-color);
+      line-height: var(--leading-text);
+    }
+
+    &-profile {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.8rem;
+    }
+
+    &-img {
+      width: 55px;
+    }
+
+    &-sosmed {
+      color: var(--red-color);
+      margin-top: 5px;
+    }
+  }
+
+  // Pagination Icon
+  .swiper-pagination {
+    position: initial;
+    margin-top: 2rem;
+
+    &-bullet {
+      width: 6px;
+      height: 6px;
+      background-color: #ededed;
+      opacity: 1;
+    }
+
+    &-bullet-active {
+      width: 1.5rem;
+      height: 6px;
+      border-radius: 0.5rem;
+      background-color: var(--red-color);
+    }
+  }
+}
