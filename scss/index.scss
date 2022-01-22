@@ -597,7 +597,7 @@ img {
 
     .switch-active {
       background-color: var(--white-color);
-      box-shadow: 0 px 8px rgba($color: #343d48, $alpha: 0.1);
+      box-shadow: 0 2px 8px rgba($color: #343d48, $alpha: 0.1);
     }
   }
 
@@ -690,5 +690,68 @@ img {
     padding: 5px 12px;
     background-color: #ffa740;
     border-radius: 7px;
+  }
+}
+
+// ===== TEAM SECTION =====
+.team {
+  &__container {
+    gap: 3rem;
+  }
+
+  &__group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  &__item {
+    display: grid;
+    gap: 1rem;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    transition: var(--transition-400);
+
+    &:hover {
+      box-shadow: 0 4px 12px rgba($color: #343d48, $alpha: 0.1);
+    }
+
+    &-profile {
+      width: 70px;
+      justify-self: center;
+    }
+
+    &-data {
+      text-align: center;
+    }
+
+    &-name {
+      font-size: 18px;
+      font-weight: var(--font-bold);
+      color: var(--black-color);
+      margin-bottom: 5px;
+    }
+
+    &-profession {
+      font-size: 14px;
+      color: var(--dark-grey-color);
+      margin-bottom: 10px;
+    }
+
+    &-social {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    &-link {
+      display: inline-flex;
+      font-size: 1.1rem;
+      color: var(--dark-grey-color);
+
+      &:hover {
+        color: var(--red-color);
+      }
+    }
   }
 }
