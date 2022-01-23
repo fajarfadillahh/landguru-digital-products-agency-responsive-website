@@ -922,3 +922,59 @@ img {
     }
   }
 }
+
+// ===== NEWSLETTER SECTION =====
+.newsletter {
+  &__container {
+    text-align: center;
+    gap: 2rem;
+    padding: 3.5rem 2rem;
+    background-color: var(--red-color);
+    border-radius: 1rem;
+  }
+
+  &__title {
+    color: var(--white-color);
+    margin-bottom: 15px;
+  }
+
+  &__text {
+    font-size: 15px;
+    color: var(--white-color);
+    line-height: var(--leading-text);
+  }
+
+  &__direction {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    &-input {
+      display: flex;
+      text-align: center;
+      padding: 1rem 2rem;
+      background-color: var(--white-color);
+      border-radius: 5rem;
+      font-size: 15px;
+      font-weight: var(--font-medium);
+      color: var(--black-color);
+
+      &::placeholder {
+        font-size: 15px;
+        font-weight: var(--font-medium);
+        color: var(--red-color);
+      }
+    }
+
+    &-button {
+      display: flex;
+      justify-content: center;
+      padding: 1rem 2rem;
+      background-color: var(--black-color);
+      border-radius: 5rem;
+      font-size: 15px;
+      font-weight: var(--font-bold);
+      color: var(--white-color);
+    }
+  }
+}
