@@ -1048,7 +1048,7 @@ img {
 
   .home {
     &__data {
-      width: 90%;
+      width: 80%;
       margin: 0 auto;
     }
 
@@ -1065,5 +1065,11 @@ img {
   .all-features__group {
     grid-template-columns: 0.8fr;
     justify-content: center;
+  }
+
+  .about__data,
+  .team__group {
+    width: 80%;
+    margin: 0 auto;
   }
 }
