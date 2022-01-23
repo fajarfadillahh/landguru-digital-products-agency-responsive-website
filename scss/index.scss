@@ -1072,4 +1072,29 @@ img {
     width: 80%;
     margin: 0 auto;
   }
+
+  .blog__item-overlay {
+    height: 300px;
+  }
+
+  .newsletter {
+    &__direction {
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 0.3rem;
+      background-color: var(--white-color);
+      border-radius: 5rem;
+      gap: 0;
+
+      &-input {
+        width: 80%;
+        text-align: left;
+        padding: 0 1.5rem;
+      }
+
+      &-button {
+        background-color: var(--red-color);
+      }
+    }
+  }
 }
