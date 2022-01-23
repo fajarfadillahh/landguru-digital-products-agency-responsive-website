@@ -1011,3 +1011,30 @@ img {
     }
   }
 }
+
+// ===== FOOTER SECTION =====
+.footer {
+  border-top: 1.5px solid rgba($color: #343d48, $alpha: 0.1);
+
+  &__container {
+    text-align: center;
+    gap: 2rem;
+  }
+
+  &__logo {
+    justify-self: center;
+  }
+
+  &__list {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  &__link,
+  &__copy {
+    font-size: 15px;
+    color: var(--dark-grey-color);
+  }
+}
