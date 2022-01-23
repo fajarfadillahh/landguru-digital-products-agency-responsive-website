@@ -1038,3 +1038,32 @@ img {
     color: var(--dark-grey-color);
   }
 }
+
+// ===== MEDIA QUERIES =====
+// ----- width 480px -----
+@media screen and (min-width: 480px) {
+  .container {
+    margin: 0 auto;
+  }
+
+  .home {
+    &__data {
+      width: 90%;
+      margin: 0 auto;
+    }
+
+    &__title {
+      font-size: 36px;
+    }
+  }
+
+  .features__group {
+    grid-template-columns: 0.6fr;
+  }
+
+  .services__group,
+  .all-features__group {
+    grid-template-columns: 0.8fr;
+    justify-content: center;
+  }
+}
