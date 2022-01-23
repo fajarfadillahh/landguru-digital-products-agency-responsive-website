@@ -978,3 +978,36 @@ img {
     }
   }
 }
+
+// ===== INFO SECTION =====
+.info {
+  &__group {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 0.7fr));
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  &__item {
+    text-align: center;
+
+    &-icon {
+      display: inline-flex;
+      width: 50px;
+      margin-bottom: 15px;
+    }
+
+    &-title {
+      font-size: 18px;
+      font-weight: var(--font-bold);
+      color: var(--black-color);
+      margin-bottom: 10px;
+    }
+
+    &-text {
+      font-size: 15px;
+      color: var(--dark-grey-color);
+      line-height: var(--leading-text);
+    }
+  }
+}
