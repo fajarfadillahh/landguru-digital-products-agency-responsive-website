@@ -1156,7 +1156,8 @@ img {
   .works__item-title,
   .pricing__card-title,
   .team__item-name,
-  .testimonial__content-title {
+  .testimonial__content-title,
+  .info__item-title {
     font-size: 20px;
   }
 
@@ -1176,7 +1177,12 @@ img {
   .testimonial__content-comment,
   .testimonial__content-name,
   .testimonial__content-sosmed,
-  .blog__button {
+  .blog__button,
+  .newsletter__text,
+  .newsletter__direction-button,
+  .newsletter__direction-input,
+  .newsletter__direction-input::placeholder,
+  .info__item-text {
     font-size: 17px;
   }
 
@@ -1188,7 +1194,8 @@ img {
   }
 
   .services__item-icon,
-  .all-features__item-icon {
+  .all-features__item-icon,
+  .info__item-icon {
     width: 65px;
   }
 
@@ -1211,5 +1218,9 @@ img {
   .team__item-link,
   .testimonial__content-icon {
     font-size: 1.5rem;
+  }
+
+  .newsletter__container {
+    padding: 4rem;
   }
 }
