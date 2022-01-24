@@ -164,7 +164,7 @@ img {
   }
 
   &__menu {
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 810px) {
       position: fixed;
       width: 80%;
       height: 100%;
@@ -1226,5 +1226,111 @@ img {
 
   .newsletter__container {
     padding: 4rem;
+  }
+}
+
+// ----- width 767px -----
+@media screen and (min-width: 810px) {
+  .header {
+    &__logo-text {
+      font-size: 20px;
+    }
+
+    &__menu {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+    }
+
+    &__list {
+      flex-direction: row;
+      gap: 1.5rem;
+    }
+
+    &__link {
+      padding-left: 0;
+      min-height: 0;
+
+      &.active-link {
+        background: transparent;
+
+        &::before {
+          display: none;
+        }
+      }
+    }
+
+    &__toggle,
+    &__close,
+    &__data {
+      display: none;
+    }
+
+    &__button {
+      margin: 0;
+    }
+  }
+
+  .home {
+    padding-top: 11rem;
+
+    &__title {
+      font-size: 48px;
+    }
+
+    &__img {
+      width: 720px;
+      justify-self: center;
+    }
+  }
+
+  .features__group,
+  .all-features__group,
+  .works__group,
+  .newsletter__data,
+  .newsletter__direction {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .services__container,
+  .about__container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .services__content {
+    order: 2;
+    grid-template-rows: repeat(2, max-content);
+    align-self: center;
+  }
+
+  .services__title,
+  .about__title {
+    font-size: 32px;
+  }
+
+  .services .section-subtitle,
+  .services .section-title,
+  .about .section-subtitle,
+  .about .section-title,
+  .about__text,
+  .about__data {
+    text-align: left;
+  }
+
+  .services__group {
+    grid-template-columns: 1fr;
+  }
+
+  .services__overlay,
+  .about__overlay {
+    align-self: center;
+    justify-self: center;
+  }
+
+  .about__data {
+    width: 100%;
+    align-self: center;
   }
 }
