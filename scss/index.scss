@@ -1098,3 +1098,63 @@ img {
     }
   }
 }
+
+// ----- width 640px -----
+@media screen and (min-width: 640px) {
+  .section {
+    &-title {
+      font-size: 28px;
+    }
+
+    &-subtitle {
+      font-size: 17px;
+    }
+  }
+
+  .home {
+    padding-top: 10rem;
+
+    &::before,
+    &::after {
+      bottom: 140px;
+    }
+
+    &__data {
+      width: 70%;
+    }
+
+    &__title {
+      font-size: 42px;
+    }
+
+    &__text,
+    &__button {
+      font-size: 17px;
+    }
+  }
+
+  .features {
+    &__group {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    &__item {
+      &-icon {
+        justify-self: left;
+        width: 65px;
+      }
+
+      &-data {
+        text-align: left;
+      }
+
+      &-title {
+        font-size: 20px;
+      }
+
+      &-text {
+        font-size: 17px;
+      }
+    }
+  }
+}
