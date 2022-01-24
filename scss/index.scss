@@ -1229,7 +1229,7 @@ img {
   }
 }
 
-// ----- width 767px -----
+// ----- width 810px -----
 @media screen and (min-width: 810px) {
   .header {
     &__logo-text {
@@ -1332,5 +1332,99 @@ img {
   .about__data {
     width: 100%;
     align-self: center;
+  }
+}
+
+// ----- width 1024px -----
+@media screen and (min-width: 1024px) {
+  .section {
+    padding: 5.5rem 0;
+
+    &-title {
+      font-size: 32px;
+    }
+  }
+
+  .home {
+    padding-bottom: 5.5rem;
+
+    &__title {
+      font-size: 52px;
+    }
+
+    &__text {
+      width: 65%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    &__img {
+      width: 900px;
+    }
+  }
+
+  .services__overlay::after,
+  .about__overlay::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    bottom: -20%;
+    z-index: var(--z-back);
+    background-image: url(../img/services-pattern.svg);
+    background-repeat: no-repeat;
+  }
+
+  .services__overlay::after {
+    left: -40%;
+    background-position: bottom left;
+  }
+
+  .about__overlay::after {
+    left: 50%;
+    background-position: bottom right;
+    transform: rotate(180deg);
+  }
+
+  .home__container,
+  .features__container,
+  .all-features__container,
+  .works__container,
+  .pricing__container,
+  .team__container,
+  .newsletter__container {
+    gap: 4rem;
+  }
+
+  .features__group,
+  .works__group {
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .team__group {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+
+  .services__title,
+  .about__title {
+    font-size: 38px;
+  }
+
+  .testimonial__data,
+  .blog__data {
+    margin-bottom: 4rem;
+  }
+
+  .team__title,
+  .blog__title {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .newsletter__data,
+  .newsletter__direction {
+    width: 60%;
   }
 }
