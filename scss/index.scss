@@ -1153,7 +1153,9 @@ img {
   .features__item-title,
   .services__item-title,
   .all-features__item-title,
-  .works__item-title {
+  .works__item-title,
+  .pricing__card-title,
+  .team__item-name {
     font-size: 20px;
   }
 
@@ -1162,13 +1164,21 @@ img {
   .all-features__item-text,
   .about__text,
   .about__button,
-  .works__item-text {
+  .works__item-text,
+  .pricing__switch-monthly,
+  .pricing__switch-annual,
+  .pricing__card-text,
+  .pricing__card-item,
+  .pricing__card-button,
+  .pricing__card-month,
+  .team__item-profession {
     font-size: 17px;
   }
 
   .services__item,
   .all-features__item,
-  .works__item {
+  .works__item,
+  .team__item {
     gap: 1.5rem;
   }
 
@@ -1183,5 +1193,17 @@ img {
 
   .about__data {
     width: 70%;
+  }
+
+  .team__item-profile {
+    width: 100px;
+  }
+
+  .team__item-profession {
+    margin-bottom: 15px;
+  }
+
+  .team__item-link {
+    font-size: 1.5rem;
   }
 }
