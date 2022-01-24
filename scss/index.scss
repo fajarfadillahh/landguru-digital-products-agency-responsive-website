@@ -1157,4 +1157,48 @@ img {
       }
     }
   }
+
+  .services {
+    &__item {
+      gap: 1.5rem;
+
+      &-icon {
+        width: 65px;
+      }
+
+      &-title {
+        font-size: 20px;
+      }
+
+      &-text {
+        font-size: 17px;
+      }
+    }
+
+    &__overlay-play {
+      font-size: 3.5rem;
+    }
+  }
+
+  .all-features {
+    &__group {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    &__item {
+      gap: 1.5rem;
+
+      &-icon {
+        width: 65px;
+      }
+
+      &-title {
+        font-size: 20px;
+      }
+
+      &-text {
+        font-size: 17px;
+      }
+    }
+  }
 }
