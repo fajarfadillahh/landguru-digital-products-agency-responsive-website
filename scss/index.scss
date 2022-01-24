@@ -1155,7 +1155,8 @@ img {
   .all-features__item-title,
   .works__item-title,
   .pricing__card-title,
-  .team__item-name {
+  .team__item-name,
+  .testimonial__content-title {
     font-size: 20px;
   }
 
@@ -1171,7 +1172,11 @@ img {
   .pricing__card-item,
   .pricing__card-button,
   .pricing__card-month,
-  .team__item-profession {
+  .team__item-profession,
+  .testimonial__content-comment,
+  .testimonial__content-name,
+  .testimonial__content-sosmed,
+  .blog__button {
     font-size: 17px;
   }
 
@@ -1203,7 +1208,8 @@ img {
     margin-bottom: 15px;
   }
 
-  .team__item-link {
+  .team__item-link,
+  .testimonial__content-icon {
     font-size: 1.5rem;
   }
 }
