@@ -1039,6 +1039,29 @@ img {
   }
 }
 
+// ===== SCROLLUP SECTION =====
+.scrollup {
+  position: fixed;
+  display: inline-flex;
+  opacity: 0;
+  bottom: 3.5rem;
+  right: 1.5rem;
+  font-size: 1.5rem;
+  padding: 0.7rem;
+  background-color: rgba($color: #ea3a60, $alpha: 0.8);
+  border-radius: 0.5rem;
+  color: var(--white-color);
+  transition: var(--transition-400);
+
+  &:hover {
+    background-color: rgba($color: #ea3a60, $alpha: 1);
+  }
+
+  &.scroll-active {
+    opacity: 1;
+  }
+}
+
 // ===== MEDIA QUERIES =====
 // ----- width 480px -----
 @media screen and (min-width: 480px) {
